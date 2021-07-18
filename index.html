@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- For multilanguage use -->
+    <link rel="alternate" hreflang="en-us" href="" />
+
+    <!-- For faster loading time change to your url in href-->
+    <link rel="preconnect" href="" crossorigin />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#1565c0">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+
+    <!-- Fonts, icons and flags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous" media="print"
+        onload="this.media='all'">
+
+    <!-- Fonts Montserat and roboto -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload="this.media='all'">
+
+    <!-- main style-->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- For google to add the right website to the right language -->
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="The friendly Dog" />
+
+    <!-- different Icons that are for the different type of devices, choose dependend on the usecase -->
+    <link rel="icon" type="image/png" href="" /> <!-- Icon normaler browser, normally 16x16 or 32x32 -->
+    <link rel="apple-touch-icon" type="image/png" href="" /> <!-- Icon apple touch devices, 180x180/167x167/152x152 -->
+    <link rel="shortcut icon" href="" sizes="196x196"> <!-- Icon android devices, 196x196-->
+
+    <!-- Tag so googlebot does take all you sub websites into one entry -->
+    <link rel="canonical" href="" />
+
+    <!-- General website information -->
+    <meta name="author" content="The friendly Dog" />
+    <meta name="description" content="Software Engineer" />
+
+    <!-- Social Media referances for better display when sharing-->
+    <meta property="og:title" content="The friendly Dog" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="This is the desctiption for your website" />
+    <meta property="og:site_name" content="The friendly Dog" />
+    <meta property="og:locale" content="en-us" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:image" content="" />
+
+    <!-- Website title shown on the tab -->
+    <title>The friendly Dog</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="0" data-target=".navbar" class="page-wrapper">
+
+
+    <!-- 
+        Here is the navbar
+        Add your Content for the navbar and adjust the navlinks if you add or delete sections.
+    -->
+    <div class="masthead fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="/" class="navbar-brand">The friendly Dog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsingNavbar3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbar-content" class="navbar-collapse main-menu-item collapse justify-content-start">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accomplishments">Accomplish­ments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                    <li class="nav-item dropdown theme-dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true"
+                            aria-label="Display preferences">
+                            <i class="fas fa-moon" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item js-set-theme-light">
+                                <span>Light</span>
+                            </a>
+                            <a href="#" class="dropdown-item js-set-theme-dark">
+                                <span>Dark</span>
+                            </a>
+                            <a href="#" class="dropdown-item js-set-theme-auto">
+                                <span>Automatic</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Main Page body -->
+    <div class="page-body">
+
+        <!-- Section for biographical information -->
+        <section id="about" class="home-section section-prime">
+            <div class="home-section-bg "></div>
+            <div class="home-section-bg "></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div id="profile">
+                            <img class="profile-avatar avatar-circle" src="/images/profile_pic.png"
+                                alt="The friendly Dog">
+                            <div class="portrait-title">
+                                <h2>The friendly Dog</h2>
+                                <h3>Software Engineer</h3>
+                            </div>
+
+                            <ul class="network-icon" aria-hidden="true">
+                                <li>
+                                    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="github">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                                        aria-label="linkedin">
+                                        <i class="bi bi-linkedin linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <h1>Biography</h1>
+
+                        <div class="article-style">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo
+                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                                dolor
+                                sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo
+                                duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                                ipsum dolor
+                                sit amet.</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="section-subheading">Interests</div>
+                                <ul class="ul-interests mb-0">
+                                    <li>Husky</li>
+                                    <li>Software Development</li>
+                                    <li>Computer</li>
+                                    <li>Teeth</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="section-subheading">Education</div>
+                                <ul class="ul-edu fa-ul mb-0">
+                                    <li>
+                                        <i class="fa-li fas fa-graduation-cap"></i>
+                                        <div class="description">
+                                            <p class="course">Degree Computer Science, 2002</p>
+                                            <p class="institution">The University</p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for the skills -->
+        <section id="skills" class="home-section section-secondary">
+            <div class="home-section-bg "></div>
+            <div class="container">
+                <div class="row skills">
+                    <div class="col-md-12 section-heading">
+                        <h1>Skills</h1>
+                    </div>
+
+                    <!-- add here the icons of your skills and adjust the titles-->
+                    <div class="col-12 col-sm-4">
+                        <div class="skills-icon"><img src="/images/icons/crypto.svg" alt="crypto"
+                                class="svg-icon svg-baseline"></div>
+                        <div class="section-subheading">Crypto/Security</div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="skills-icon"><img src="/images/icons/5G.svg" alt="5G" class="svg-icon svg-baseline">
+                        </div>
+                        <div class="section-subheading">5G</div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="skills-icon"><img src="/images/icons/java.svg" alt="java"
+                                class="svg-icon svg-baseline"></div>
+                        <div class="section-subheading">Java</div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="skills-icon"><img src="/images/icons/c.svg" alt="c" class="svg-icon svg-baseline">
+                        </div>
+                        <div class="section-subheading">C</div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="skills-icon"><img src="/images/icons/linux.svg" alt="linux"
+                                class="svg-icon svg-baseline"></div>
+                        <div class="section-subheading">Linux</div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="skills-icon"><img src="/images/icons/network.svg" alt="network"
+                                class="svg-icon svg-baseline"></div>
+                        <div class="section-subheading">Network technologies</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for the experience gained -->
+        <section id="experience" class="home-section section-prime">
+            <div class="home-section-bg "></div>
+            <div class="container">
+                <div class="row  ">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Experience</h1>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+
+                        <!-- Every row of experience has to be added like this one with the information -->
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col ">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                                <div class="m-2">
+                                    <span class="badge badge-pill border ">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card shadow-small">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <div class="mr-2 mb-2"><a href="https://en.wikipedia.org/wiki/Santa_Claus"
+                                                    target="_blank" rel="noopener"><img
+                                                        src="/images/icons/brands/santa_inc.png" width="56px"
+                                                        height="56px" alt="Santa"></a></div>
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    Santa Intern</div>
+                                                <div class="section-subheading card-title exp-company text-muted my-0">
+                                                    <a href="https://en.wikipedia.org/wiki/Santa_Claus" target="_blank"
+                                                        rel="noopener">Santa Inc</a></div>
+                                                <div class="text-muted exp-meta">
+                                                    Nov 2016 – Jul 2021
+                                                    <span class="middot-divider"></span>
+                                                    <span>North Pole</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Design presents</li>
+                                                <li>End-to-End Test present production</li>
+                                                <li>Deploying presents</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                                <div class="m-2">
+                                    <span class="badge badge-pill border ">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card shadow-small">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <div class="mr-2 mb-2"><a href="https://en.wikipedia.org/wiki/Santa_Claus"
+                                                    target="_blank" rel="noopener"><img
+                                                        src="/images/icons/brands/santa_inc.png" width="56px"
+                                                        height="56px" alt="Santa"></a></div>
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    Student Employee</div>
+                                                <div class="section-subheading card-title exp-company text-muted my-0">
+                                                    <a href="https://en.wikipedia.org/wiki/Santa_Claus" target="_blank"
+                                                        rel="noopener">Santa Inc</a></div>
+                                                <div class="text-muted exp-meta">
+                                                    Aug 2014 – Sep 2016
+                                                    <span class="middot-divider"></span>
+                                                    <span>North Pole</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Test integration for Santa</li>
+                                                <li>Conceptual prototyping of awesome presents</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                                <div class="m-2">
+                                    <span class="badge badge-pill border ">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col ">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card shadow-small">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <div class="mr-2 mb-2"><a href="https://en.wikipedia.org/wiki/Mrs._Claus"
+                                                    target="_blank" rel="noopener"><img
+                                                        src="/images/icons/brands/santa_inc.png" width="56px"
+                                                        height="56px" alt="Mrs. Santa"></a>
+                                            </div>
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    Santa Assistant</div>
+                                                <div class="section-subheading card-title exp-company text-muted my-0">
+                                                    <a href="https://en.wikipedia.org/wiki/Mrs._Claus" target="_blank"
+                                                        rel="noopener">Mrs. Santa Inc, part of Santa Inc.</a></div>
+                                                <div class="text-muted exp-meta">
+                                                    Mar 2012 - Aug 2014
+                                                    <span class="middot-divider"></span>
+                                                    <span>South Pole</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Head of communication between Santa and Mrs. Santa</li>
+                                                <li>optimising Conversations problems</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for the Accomplishments -->
+        <section id="accomplishments" class="home-section section-secondary">
+            <div class="home-section-bg "></div>
+            <div class="container">
+                <div class="row  ">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Accomplish­ments</h1>
+                    </div>
+                    <div class="col-12 col-lg-8">
+
+                        <!-- Every card of experience has to be added like this one with the information -->
+                        <div class="card experience course">
+                            <div class="card-body">
+                                <div class="d-flex align-content-start">
+                                    <div class="mr-2 mb-2"><a href="https://en.wikipedia.org/wiki/Santa_Claus"
+                                            target="_blank" rel="noopener"><img src="/images/icons/brands/santa_inc.png"
+                                                width="56px" height="56px" alt="Santa Inc"></a></div>
+                                    <div>
+                                        <div class="section-subheading card-title exp-title text-muted my-0">
+                                            Present Automation Specialist Level 2</div>
+                                        <div class="card-subtitle my-0 article-metadata"><a
+                                                href="https://en.wikipedia.org/wiki/Mrs._Claus" target="_blank"
+                                                rel="noopener">Santa Inc</a><span class="middot-divider"></span>
+                                            Dec 2019
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card experience course">
+                            <div class="card-body">
+                                <div class="d-flex align-content-start">
+                                    <div class="mr-2 mb-2"><a href="https://en.wikipedia.org/wiki/Santa_Claus"
+                                            target="_blank" rel="noopener"><img src="/images/icons/brands/santa_inc.png"
+                                                width="56px" height="56px" alt="Santa Inc"></a></div>
+                                    <div>
+                                        <div class="section-subheading card-title exp-title text-muted my-0">
+                                            Present Automation Specialist Level 1</div>
+                                        <div class="card-subtitle my-0 article-metadata"><a
+                                                href="https://en.wikipedia.org/wiki/Santa_Claus" target="_blank"
+                                                rel="noopener">Santa Inc</a><span class="middot-divider"></span>
+                                            Oct 2018
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card experience course">
+                            <div class="card-body">
+                                <div class="d-flex align-content-start">
+                                    <div class="mr-2 mb-2"><a href="https://www.istqb.org/" target="_blank"
+                                            rel="noopener"><img src="/images/icons/brands/istqb.svg" width="56px"
+                                                height="56px" alt="ISTQB"></a></div>
+                                    <div>
+                                        <div class="section-subheading card-title exp-title text-muted my-0">ISTQB
+                                            Certified Tester - Foundation Level</div>
+                                        <div class="card-subtitle my-0 article-metadata"><a
+                                                href="https://www.istqb.org/" target="_blank"
+                                                rel="noopener">ISTQB</a><span class="middot-divider"></span>
+                                            Mar 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text">Certification number: 15-CDA-12398DS12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for the projects -->
+        <section id="projects" class="home-section section-prime">
+            <div class="container">
+                <div class="row  ">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Projects</h1>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+
+                        <!-- Toolbar for the different categories, change and add depending on the categories the data 
+                            filter and name -->
+                        <div class="project-toolbar">
+                            <div class="btn-toolbar">
+                                <div class="btn-group flex-wrap btn-group">
+                                    <button class="btn btn-primary btn-lg filter-button active" for="btnradio1"
+                                        data-filter="all">All</button>
+
+                                    <button class="btn btn-primary btn-lg filter-button"
+                                        data-filter="avocado">Avocado</button>
+
+                                    <button class="btn btn-primary btn-lg filter-button" data-filter="dog">Dog</button>
+
+                                    <button class="btn btn-primary btn-lg filter-button"
+                                        data-filter="teeth">Teeth</button>
+
+                                    <button class="btn btn-primary btn-lg filter-button" data-filter="north-pole">North
+                                        Pole</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="row">
+
+                            <!-- Every entry to the projects is here included -->
+                            <div class="col-12 filter avocado north-pole">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Avocado" target="_blank"
+                                                rel="noopener">Import protocol for avocado on the north
+                                                and south pole</a>
+                                        </div>
+                                        <div class="article-style">
+                                            As part of my student thesis, I implemented engineered the
+                                            this portocol in order to increase the yearly import of avocado with at
+                                            least 150%.
+                                            The improvments is still ongoing
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Avocado" target="_blank" rel="noopener">
+                                            <img src="/images/icons/projects/project_avocado.png" alt="Avocado"
+                                                loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 filter teeth north-pole">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Tooth_fairy" target="_blank"
+                                                rel="noopener">Dentist Project</a>
+                                        </div>
+                                        <div class="article-style">
+                                            Fixing teeth is one of the most important task, it does not depend
+                                            on what or who you are.
+                                            The project focused on temporal fixes and longterm improvments.
+                                            This project was a colaboration between the tooth fairy and Santa
+                                            and as such an interdisciplinary experience.
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Tooth_fairy" target="_blank"
+                                            rel="noopener">
+                                            <img src="/images/icons/projects/project_dentist.png" alt="project dentist"
+                                                loading="lazy">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 filter teeth north-pole">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Tooth_fairy" target="_blank"
+                                                rel="noopener">Dentist Project part II</a>
+                                        </div>
+                                        <div class="article-style">
+                                            The dentist project was such a succes that the money was flowing for another
+                                            one. The money given by the parents was invested into the jointventure
+                                            "Fairy Santa"
+                                            and also given to weokless elves all aorund the world
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Tooth_fairy" target="_blank"
+                                            rel="noopener">
+                                            <img src="/images/icons/projects/project_teeth.png" alt="project_teeth"
+                                                loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 filter dog">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Dog" target="_blank"
+                                                rel="noopener">Risk evaluation of Dogs </a>
+                                        </div>
+                                        <div class="article-style">
+                                            It is important to invest into a friend, but is it worth it? With this exact
+                                            question the risk evaluation project was started. Throughout different
+                                            trials
+                                            it was confirmed that it can be a succes if one really want to and as such
+                                            the
+                                            project was a huge success.
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Dog" target="_blank" rel="noopener">
+                                            <img src="/images/icons/projects/project_dog.jpg" alt="Dog" loading="lazy">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 filter dog">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Husky" target="_blank"
+                                                rel="noopener">Husky risk assesment</a>
+                                        </div>
+
+                                        <div class="article-style">
+                                            Taking in a husky is an even bigger thing than taking in a dog. As such
+                                            the importance of such a specific risk assesment was clear. With this in
+                                            mind a big evaluation study was used to confirm the believes that the risk
+                                            is worth to take. The study is still ongoing and will soon show results.
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Husky" target="_blank" rel="noopener">
+                                            <img src="/images/icons/projects/project_husky.png" alt="Husky loading="
+                                                lazy">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 filter north-pole">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Plumber" target="_blank"
+                                                rel="noopener">Plumber simulation</a>
+                                        </div>
+                                        <div class="article-style">
+                                            This small project was focused on the work of all the plumbers out there.
+                                            It improved availability and performance of new and old plumbers.
+                                            At the end of the project, it was tested on the nort and south pole with a
+                                            huge success.
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Plumber" target="_blank" rel="noopener">
+                                            <img src="/images/icons/projects/project_plumber.png"
+                                                alt="Simulator Plumber" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 filter avocado north-pole">
+                                <div class="each-item">
+                                    <div class="media-body">
+                                        <div class="section-subheading article-title mb-0 mt-0">
+                                            <a href="https://en.wikipedia.org/wiki/Avocado" target="_blank"
+                                                rel="noopener">Growing Avocado</a>
+                                        </div>
+
+                                        <div class="article-style">
+                                            Growing avocado was not seen as possibility on the south and north pole,
+                                            but I tried my best to achieve it. After the climate change the weather
+                                            changed and more was possible but still up until now only small plants
+                                            have survived on the poles. But I will not give up on this project.
+                                        </div>
+                                        <div class="stream-meta article-metadata">
+                                        </div>
+                                    </div>
+                                    <div class="ml-3">
+                                        <a href="https://en.wikipedia.org/wiki/Avocado" target="_blank" rel="noopener">
+                                            <img src="/images/icons/projects/project_avocado.png"
+                                                alt="AN.ON Server Application Extension" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        </section>
+    </div>
+
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+            </footer>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js"
+        integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ=="
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"
+        integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"
+        integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw=="
+        crossorigin="anonymous"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(".filter-button").click(function () {
+
+            $('.filter-button').each(function () {
+                $(this).parent().find('button');
+                $('.filter-button').removeClass('active');
+            });
+            $(this).addClass('active');
+
+            var value = $(this).attr('data-filter');
+        });
+
+        /* script for filter */
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                } else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+                }
+
+            });
+
+            /* script for hover over card */
+            $(".card").hover(
+                function () {
+                    $(this).addClass('shadow').css('cursor', 'pointer');
+                },
+                function () {
+                    $(this).removeClass('shadow');
+                }
+            );
+
+            /* script for scrolling down */
+            $(function () {
+                $("#navbar-content a").on('click', function () {
+                    $("html, body").animate({
+                        scrollTop: $($.attr(this, 'href')).offset().top
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
