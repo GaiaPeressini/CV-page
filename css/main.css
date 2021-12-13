@@ -258,6 +258,10 @@ ul.ul-edu li .description p {
 
 /* Experience area */
 
+.middot-divider {
+  color: #000;
+}
+
 .py-2 {
     padding-bottom: 5rem !important;
     padding-top: 5rem !important;
